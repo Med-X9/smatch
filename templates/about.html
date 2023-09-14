@@ -1,0 +1,127 @@
+{% extends 'masterPage.html' %} 
+{% load static %}
+{% block Content %}
+<div class="sub-banner">
+    <figure class="sub-bannersideshape mb-0">
+        <img src="{% static 'images/sub-bannersideshape.png' %}" alt="" class="img-fluid">
+    </figure>
+<!-- Sub-Banner -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12 col-12">
+                    <div class="banner_content" data-aos="fade-right">
+                        <h1 class="text-white">Qui sommes-nous?</h1>
+                        <div class="box">
+                            <span class="mb-0">Accueil</span><i class="first fa-regular fa-angle-right"></i><i class="second fa-regular fa-angle-right"></i><span class="mb-0 box_span">A propos</span>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="banner_wrapper">
+                        <figure class="mb-0 sub-bannerimage">
+                            <img src="{% static 'images/sub-bannerimage.png' %}" alt="" class="">
+                        </figure> 
+                    </div>  
+                </div>
+            </div>
+        </div> 
+        <figure class="sub-bannersideshape2 mb-0">
+            <img src="{% static 'images/sub-bannersideshape2.png' %}" alt="" class="img-fluid">
+        </figure>
+    </section>
+</div>
+<!-- About -->
+<section class="aboutpage-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="aboutpage_wrapper">
+                    <figure class="mb-0 aboutpage-image ">
+                        <img src="{% static 'images/aboutv2.jpg' %}" alt="" style="border-radius: 50px;">
+                    </figure> 
+                    <figure class="mb-0 aboutpage-image2">
+                        <img src="{% static 'images/aboutpage-image2.png' %}" alt="" class="img-fluid">
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="aboutpage_content" data-aos="fade-right">
+                    <h2>A propos</h2>
+                    <p class="text-size-18">Chez SM@TCH, nous sommes spécialisés dans les solutions Supply Chain pour l'industrie 4.0.
+                        Notre équipe expérimentée crée des solutions sur mesure pour optimiser vos opérations, 
+                        améliorer l'efficacité logistique et renforcer la collaboration avec vos partenaires commerciaux. 
+                        Nous croyons au pouvoir de la technologie pour stimuler la croissance et la compétitivité des entreprises. 
+                        Faites équipe avec nous pour une chaîne d'approvisionnement performante et une croissance durable.</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<section class="service-section position-relative">
+    <div class="container">
+        <figure class="service-image mb-0">
+            <img src="{% static 'images/service-image.png' %}" class="img-fluid" alt="">
+        </figure>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="service_content" data-aos="fade-right">
+                    <h5>Engagement envers l'Excellence</h5>
+                    <h2>Notre Qualité et Nos Valeurs</h2>
+                    <p class="text-size-18">Chez SM@TCH, la qualité et nos valeurs sont au cœur de tout ce que nous faisons. Nous nous engageons envers nos clients, agissons avec intégrité, favorisons l'innovation et visons l'excellence opérationnelle. Ces principes guident notre travail pour offrir des solutions exceptionnelles à nos clients.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="service_contentbox">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="service-box box-mb">
+                                <figure class="service-reboticon">
+                                    <img src="{% static 'images/service-reboticon.png' %}" alt="" class="img-fluid">
+                                </figure> 
+                                <h4>Engagement envers la clientèle</h4>
+                                <p class="text-size-16 mb-2">Service exceptionnel, réponse à leurs besoins.</p>
+                            </div>   
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="box-top">
+                                <div class="service-box box-mb">
+                                    <figure class="service-learningicon">
+                                        <img src="{% static 'images/service-learningicon.png' %}" alt="" class="img-fluid">
+                                    </figure>
+                                    <h4>Innovation</h4>
+                                    <p class="text-size-16 mb-2">Nous recherchons constamment des solutions créatives pour améliorer les opérations de nos clients.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="service-box">
+                                <figure class="service-scienceicon">
+                                    <img src="{% static 'images/service-scienceicon.png' %}" alt="" class="img-fluid">
+                                </figure>
+                                <h4>Intégrité</h4>
+                                <p class="text-size-16 mb-2">ous agissons avec honnêteté et éthique dans toutes nos interactions.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="box-top">
+                                <div class="service-box">
+                                    <figure class="service-analysicon">
+                                        <img src="{% static 'images/service-analysicon.png' %}" alt="" class="img-fluid">
+                                    </figure>
+                                    <h4>Excellence opérationnelle</h4>
+                                    <p class="text-size-16 mb-2">Solutions de haute qualité, amélioration continue</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
