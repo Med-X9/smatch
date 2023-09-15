@@ -1,0 +1,60 @@
+{% extends 'masterPage.html' %} 
+{% load static %}
+{% block Content %}
+<div class="sub-banner">
+    <figure class="sub-bannersideshape mb-0">
+        <img src="{% static 'images/sub-bannersideshape.png' %}" alt="" class="img-fluid">
+    </figure>
+<!-- Sub-Banner -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12 col-12">
+                    <div class="banner_content" data-aos="fade-right">
+                        <h1 class="text-white">Nos Solutions</h1>
+                        <div class="box">
+                          <span class="mb-0">Accueil</span><i class="first fa-regular fa-angle-right"></i><i class="second fa-regular fa-angle-right"></i><span class="mb-0">Projets</span>
+                          <i class="first fa-regular fa-angle-right"></i><i class="second fa-regular fa-angle-right"></i><span class="mb-0 box_span">Solutions</span>
+                      </div>
+                    </div>
+                </div> 
+                <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="banner_wrapper">
+                        <figure class="mb-0 sub-bannerimage">
+                            <img src="{% static 'images/sub-bannerimage.png' %} " alt="" class="">
+                        </figure> 
+                    </div>  
+                </div>
+            </div>
+        </div> 
+        <figure class="sub-bannersideshape2 mb-0">
+            <img src="{% static 'images/sub-bannersideshape2.png' %}" alt="" class="img-fluid">
+        </figure>
+    </section>
+</div>
+<section class="projects-section-five">
+    <div class="study_content text-center">
+        <h2 style="color:#F8CC1A;">{{ project.titre }}</h2>
+    </div>
+    <div class="auto-container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <p>{{ project.description }}</p>
+                <!-- Vous pouvez afficher d'autres détails du projet ici -->
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.titre }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.titre }}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Categorie: {{ project.categorie }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+{% endblock %}

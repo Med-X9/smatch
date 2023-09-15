@@ -54,9 +54,9 @@ body{
     font-weight: 700;
     color: var(--e-global-color-primary);
 }
-.card{
+/* .card{
     border-radius: 50px;
-}
+} */
 .card:hover{
     /* background: #ecc260d4; */
     -webkit-transform: translateY(-10px);
@@ -170,7 +170,7 @@ body{
 
 .card img{
     transition: 1.2s;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 .visible_in_mobile {
     display: none;
@@ -1133,7 +1133,7 @@ p {
     position: relative;
 }
 .faq-section .accordion-card{
-    box-shadow: 1px 1px 70px rgba(255 188 30 / 21%);
+    box-shadow: 1px 1px 20px rgba(255 188 30 / 21%);
     background: var(--e-global-color-white);
     width: 100%;
     border-radius: 25px;

@@ -4,86 +4,45 @@
   <head>
     <title>SM@TCH | Votre Partenaire Supply Chain</title>
     <!-- /SEO Ultimate -->
-    <meta
-      name="keywords"
-      content="SM@TCH,smatch,sls partner,solutions Supply Chain, éditeur, intégrateur, chaîne d'approvisionnement, applications web, applications mobiles"
-    />
+    <meta name="description" content="Chez SM@TCH, nous sommes spécialisés dans les solutions Supply Chain pour l'industrie 4.0. Notre équipe expérimentée crée des solutions sur mesure pour optimiser vos opérations, améliorer l'efficacité logistique et renforcer la collaboration avec vos partenaires commerciaux."> <!-- Description de la page -->
+    <meta name="keywords" content="SM@TCH,smatch,sls partner,solutions Supply Chain, éditeur, intégrateur, chaîne d'approvisionnement, applications web, applications mobiles, programmation 4.0, industrie 4.0, odoo" />
     <meta name="robots" content="index, follow" />
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta charset="utf-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/images/favicon/favicon-smatch.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/images/favicon/favicon-smatch.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/images/favicon/favicon-smatch.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/images/favicon/favicon-smatch.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/images/favicon/favicon-smatch.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/images/favicon/favicon-smatch.png"
-    />
-    <link rel="stylesheet" href="{% static 'css/card.css' %}" />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="{% static 'images/favicon/favicon-smatch.png' %}"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="{% static 'images/favicon/favicon-smatch.png' %}"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="{% static 'images/favicon/favicon-smatch.png' %}"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="{% static 'images/favicon/favicon-smatch.png' %}"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="{% static 'images/favicon/favicon-smatch.png' %}"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="{% static 'images/favicon/favicon-smatch.png' %}"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="{% static 'images/favicon/favicon-smatch.png' %}"
+    <meta name="author" content="SMATCH">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Balises Open Graph (pour les réseaux sociaux) -->
+    <meta property="og:title" content="Chez SM@TCH - Solutions Supply Chain pour l'industrie 4.0">
+    <meta property="og:description" content="Chez SM@TCH, nous sommes spécialisés dans les solutions Supply Chain pour l'industrie 4.0. Notre équipe expérimentée crée des solutions sur mesure pour optimiser vos opérations, améliorer l'efficacité logistique et renforcer la collaboration avec vos partenaires commerciaux.">
+    <meta property="og:image" content="URL de l'image à afficher sur les réseaux sociaux">
+    <meta property="og:url" content="https://www.linkedin.com/company/sls-partner-smatch/about/">
+    <!-- Balises de géolocalisation (facultatif) -->
+    <meta name="geo.placename" content="CASABLANCA">
+    <!-- Balises pour le domaine spécifique -->
+    <link rel="canonical" href="URL canonique de cette page">
+    <meta name="robots" content="index, follow">
+    {% comment %} google analytics {% endcomment %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9M4TQR6GZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S9M4TQR6GZ');
+    </script>
+
+    <!-- Favicon (icône de site) -->
+    <link rel="icon" href="{% static 'images/favicon-smatch.png' %}" type="image/x-icon">
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'images/favicon-smatch.png' %}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-smatch.png' %}"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'images/favicon-smatch.png' %}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-smatch.png' %}"
     />
     <meta name="msapplication-TileColor" content="#FF9B05 " />
     <meta name="theme-color" content="#FF9B05 " />
@@ -91,32 +50,13 @@
     <link href="{% static 'bootstrap/bootstrap.min.css' %}" rel="stylesheet" />
     <script rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}" ></script>
     <!-- Font Awesome link -->
-    <script
-      src="https://kit.fontawesome.com/5fe1e407a2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/5fe1e407a2.js" crossorigin="anonymous"></script>
     <!-- StyleSheet link CSS -->
-    <link
-      href="{% static 'css/style.css' %}"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="{% static 'css/owl.carousel.min.css' %}"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet" type="text/css"/>
 
-    <link
-      href="{% static 'css/owl.theme.default.min.css' %} "
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="{% static 'css/responsive.css' %}"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="{% static 'css/owl.theme.default.min.css' %} " rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet"type="text/css"/>
   </head>
 
   <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #fff">
@@ -143,58 +83,38 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="">Accueil</a>
-          </li>
-          <li class="nav-item text-dart">
-            <a class="nav-link text-dart" href="{% url 'about' %} ">A propos</a>
-          </li>
-          <li class="nav-space nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle dropdown-color navbar-text-color"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Projets
-            </a>
-            <div class="dropdown-menu drop-down-content">
-              <ul class="list-unstyled drop-down-pages">
-                <li class="nav-item">
-                  <a
-                    class="dropdown-item nav-link text-dart"
-                    href="{% url 'project' %}"
-                    >Solutions</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item nav-link text-dart" href="{% url 'erp' %}"
-                    >ERP Odoo</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-space nav-item">
-            <a class="nav-link text-dart" href="{% url 'contact' %}">Contact</a>
-          </li>
+            <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                <a class="nav-link" href="{% url 'home' %}">Accueil</a>
+            </li>
+            <li class="nav-item text-dart {% if request.path == '/Apropos' %}active{% endif %}">
+                <a class="nav-link text-dart" href="{% url 'about' %} ">A propos</a>
+            </li>
+            <li class="nav-space nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projets
+                </a>
+                <div class="dropdown-menu drop-down-content">
+                    <ul class="list-unstyled drop-down-pages">
+                        <li class="nav-item {% if request.path == '/projets' %}active{% endif %}">
+                            <a class="dropdown-item nav-link text-dart" href="{% url 'project' %}">Solutions</a>
+                        </li>
+                        <li class="nav-item {% if request.path == '/ERP' %}active{% endif %}">
+                            <a class="dropdown-item nav-link text-dart" href="{% url 'erp' %}">ERP Odoo</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-space nav-item {% if request.path == '/Contact' %}active{% endif %}">
+                <a class="nav-link text-dart" href="{% url 'contact' %}">Contact</a>
+            </li>
         </ul>
-      </div>
+    </div>
+    
     </div>
   </nav>
-
-
 {% block Content %}
     
 {% endblock  %}
-    
-
-
-
-  
   <section class="footer-section">
     <div class="container">
       <figure class="footer-sideshape mb-0">
@@ -206,7 +126,7 @@
       </figure>
       <div class="middle-portion">
         <div class="row">
-          <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+          <div class="col-lg-4 col-sm-6">
             <a href="{% url 'home' %}">
               <figure class="footer-logo">
                 <img
@@ -224,9 +144,9 @@
               l'excellence opérationnelle.
             </p>
           </div>
-          <div class="col-lg-3 col-md-2 col-sm-12 col-12">
+          <div class="col-lg-3 col-sm-6">
             <div class="links">
-              <h4 class="heading text-white">Résequ sociaux</h4>
+              <h4 class="heading text-white">Réseau sociaux</h4>
               <ul class="list-unstyled mb-0 social-icons">
                 <li class="circle">
                   <a href="#" class="text text-decoration-none"
@@ -234,7 +154,7 @@
                   >
                 </li>
                 <li class="circle">
-                  <a href="#" class="text text-decoration-none"
+                  <a href="https://www.linkedin.com/company/sls-partner-smatch/about/" class="text text-decoration-none"
                     ><i class="fa-brands fa-linkedin-in"></i> Linkedin</a
                   >
                 </li>
@@ -246,14 +166,14 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg- col-md-2 col-sm-12 col-12">
-            <div class="links">
+          <div class="col-lg-2 col-sm-6 " >
+            <div class="links" style="margin-left:-15px">
               <h4 class="heading text-white">Liens utiles</h4>
               <ul class="list-unstyled mb-0">
                 <li>
                   <i class="fa-solid fa-angle-right"></i
                   ><a
-                    href="index-2.html"
+                    href="{% url 'home' %}"
                     class="text-size-16 text text-decoration-none"
                     >Accueil</a
                   >
@@ -261,7 +181,7 @@
                 <li>
                   <i class="fa-solid fa-angle-right"></i
                   ><a
-                    href="about.html"
+                    href="{% url 'about' %}"
                     class="text-size-16 text text-decoration-none"
                     >A propos</a
                   >
@@ -269,7 +189,7 @@
                 <li>
                   <i class="fa-solid fa-angle-right"></i
                   ><a
-                    href="projects.html"
+                    href="{% url 'project' %}"
                     class="text-size-16 text text-decoration-none"
                     >Solutions</a
                   >
@@ -277,7 +197,7 @@
                 <li>
                   <i class="fa-solid fa-angle-right"></i
                   ><a
-                    href="projects.html"
+                    href="{% url 'erp' %}"
                     class="text-size-16 text text-decoration-none"
                     >ERP Odoo</a
                   >
@@ -285,7 +205,7 @@
                 <li>
                   <i class="fa-solid fa-angle-right"></i
                   ><a
-                    href="contact.html"
+                    href="{% url 'contact' %}"
                     class="text-size-16 text text-decoration-none"
                     >Contact</a
                   >
@@ -293,7 +213,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+          <div class="col-lg-3 col-sm-6">
             <div class="icon">
               <h4 class="heading text-white">Contact</h4>
               <ul class="list-unstyled mb-0">
@@ -301,26 +221,26 @@
                   <i class="fa fa-phone fa-icon footer-location"></i>
                   <a
                     href="tel:
-                    +212 12345678
+                    +212 520001878
                     "
                     class="mb-0 text text-decoration-none text-size-16"
                   >
-                    (212) 12345678
+                    (+212) 520001878
                   </a>
                 </li>
                 <li class="text">
                   <i class="fa fa-envelope fa-icon footer-location"></i>
                   <a
-                    href="mailto:info@repay.com"
+                    href="mailto:contact@smatch.ma"
                     class="mb-0 text text-decoration-none text-size-16"
-                    >contact@smtch.com</a
+                    >contact@smatch.ma</a
                   >
                 </li>
                 <li class="text">
                   <i
                     class="fa-solid fa-location-dot footer-location footer-location3"
                   ></i>
-                  <p class="text-size-16">Technopark,Boulvard Fes,casablanca</p>
+                  <p class="text-size-16">13 RUE AHMED EL MEJJATI RES LES ALPES 1 ER ETAGE N° 8 MAARIF CASABLANCA</p>
                 </li>
               </ul>
             </div>

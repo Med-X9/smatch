@@ -7,8 +7,13 @@ from django.core.paginator import Paginator
 
 
 class HomeView(View):
-    def get(self,request):
-        return render(request , 'home.html')
+    def get(self, request):
+        # Récupérez une liste de projets que vous souhaitez afficher
+        projects = Projet.objects.all()[:3]  # Par exemple, obtenir les trois premiers projets
+        context = {
+            'projects': projects,
+        }
+        return render(request, 'home.html', context)
 
 class AboutView(View):
     def get(self,request):
@@ -64,8 +69,8 @@ class ContactView(FormView):
 
         subject = 'Nouveau message de contact'
         message = f"Nom: {form.cleaned_data['name']}\nEmail: {form.cleaned_data['emailid']}\nTéléphone: {form.cleaned_data['phone']}\nMessage:\n{form.cleaned_data['msg']}"
-        from_email = 'mohammedsbtf11@gmail.com'
-        recipient_list = ['mohammedsbtf11@gmail.com']
+        from_email = 'contact@smatch.ma'
+        recipient_list = ['contact@smatch.ma']
 
         send_mail(subject, message, from_email, recipient_list, fail_silently=False)
 

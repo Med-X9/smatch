@@ -19,11 +19,7 @@
               votre chaîne d'approvisionnement.
             </p>
             <div class="banner-button">
-              <a
-                class="button1 lets_talk text-decoration-none"
-                href="about.html"
-                >Voir plus<i class="circle fa-regular fa-angle-right"></i
-              ></a>
+              <a class="button1 lets_talk text-decoration-none" href="{% url 'about' %}" >Voir plus<i class="circle fa-regular fa-angle-right"></i></a>
             </div>
           </div>
         </div>
@@ -173,105 +169,24 @@
     <h2>Nos Réalisations</h2>
   </div>
   <div class="auto-container mt-5">
-    <div class="row">
-      <!-- Project Block Five-->
-      <div
-        class="project-block-five col-lg-4 col-md-6 wow fadeInUp animated"
-        style="visibility: visible; animation-name: fadeInUp"
-      >
-        <div class="inner-box">
-          <div class="image-box">
-            <figure class="image">
-              <a href="#"><img src="{% static 'images/project5-4.jpg' %} " alt="" /></a>
-            </figure>
-          </div>
-          <div class="caption-box">
-            <h4 class="title">
-              <a
-                href="#"
-                style="
-                  color: #f1c255 !important;
-                  text-decoration: none !important;
-                "
-                >RFID</a
-              >
-            </h4>
-            <a href="#" class="read-more"
-              >Voir plus <i class="fa fa-arrow-right"></i
-            ></a>
-          </div>
+    <div class="row">  
+      {% for project in projects %}
+        <div class="project-block-five col-lg-4 col-md-6 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="inner-box">
+                <div class="image-box">
+                    <figure class="image"><a href="#"><img src="{{ project.image.url }}" alt="{{ project.title }}"></a></figure>
+                </div>
+                <div class="caption-box">
+                    <h4 class="title"><a href="#" style="color: #f1c255 !important; text-decoration: none !important;">{{ project.titre }}|{{ projet.slug }}</a></h4>
+                    <a href="{% if project.slug %}{% url 'detail_projet' project.slug %}{% endif %}" class="read-more">Voir plus <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Project Block Five-->
-      <div
-        class="project-block-five col-lg-4 col-md-6 wow fadeInUp animated"
-        data-wow-delay="200ms"
-        style="
-          visibility: visible;
-          animation-delay: 200ms;
-          animation-name: fadeInUp;
-        "
-      >
-        <div class="inner-box">
-          <div class="image-box">
-            <figure class="image">
-              <a href="#"><img src="{% static 'images/project5-4.jpg' %} " alt="" /></a>
-            </figure>
-          </div>
-          <div class="caption-box">
-            <h4 class="title">
-              <a
-                href="#"
-                style="
-                  color: #f1c255 !important;
-                  text-decoration: none !important;
-                "
-                >Tour de controle</a
-              >
-            </h4>
-            <a href="#" class="read-more"
-              >Voir plus <i class="fa fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Block Five-->
-      <div
-        class="project-block-five col-lg-4 col-md-6 wow fadeInUp animated"
-        data-wow-delay="300ms"
-        style="
-          visibility: visible;
-          animation-delay: 300ms;
-          animation-name: fadeInUp;
-        "
-      >
-        <div class="inner-box">
-          <div class="image-box">
-            <figure class="image">
-              <a href="#"><img src="{% static 'images/project5-4.jpg' %} " alt="" /></a>
-            </figure>
-          </div>
-          <div class="caption-box">
-            <h4 class="title">
-              <a
-                href="#"
-                style="
-                  color: #f1c255 !important;
-                  text-decoration: none !important;
-                "
-                >Warehouse management system</a
-              >
-            </h4>
-            <a href="#" class="read-more"
-              >Voir plus <i class="fa fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
+        {% endfor %}
     </div>
     <div class="row mt-5">
       <div class="col-lg-12 text-center">
-        <a href="projects.html" class="button" style="--clr: #ffbc1e"
+        <a href="{% url 'project' %}" class="button" style="--clr: #ffbc1e"
           ><span>Voir tout</span><i></i
         ></a>
       </div>
@@ -279,7 +194,7 @@
   </div>
 </section>
 <!-- Testimonial -->
-<section class="testimonial-section">
+{% comment %} <section class="testimonial-section" style="padding-bottom:0;">
   <div class="container">
     <div class="row position-relative">
       <div class="col-12">
@@ -443,9 +358,24 @@
       </div>
     </div>
   </div>
-</section>
+</section> {% endcomment %}
+{% comment %} <section class="testimonial-section" style="padding-bottom:0;padding-top:0;">
+  <!-- Partner -->
+  <div class="partner-section" style="background:#F8CC1A; padding:30px 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="banner-button float-right">
+            <a class="btn" style="background:#fff;" href="{% url 'about' %}" >Contacter nous</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> {% endcomment %}
+
 <!--FAQ / Need section-->
-<section class="faq-section provide-section">
+<section class="faq-section provide-section mt-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-12">
